@@ -11,6 +11,9 @@
     <ClCompile Include="Source\AdventOfCode.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Challenges\Challenge_01.cpp">
+      <Filter>Source\Challenges</Filter>
+    </ClCompile>
     <ClCompile Include="Source\Challenges\Challenge_N.cpp">
       <Filter>Source\Challenges</Filter>
     </ClCompile>
@@ -22,6 +25,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Challenges\Challenge_01.h">
+      <Filter>Source\Challenges</Filter>
+    </ClInclude>
     <ClInclude Include="Source\Challenges\Challenge_N.h">
       <Filter>Source\Challenges</Filter>
     </ClInclude>
