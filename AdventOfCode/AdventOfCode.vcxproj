@@ -23,32 +23,32 @@
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{b6f80e1a-3a8d-4b26-b36f-28b5bb1e25cb}</ProjectGuid>
     <RootNamespace>AdventOfCode</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -139,17 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source\AdventOfCode.cpp"/>
-    <ClCompile Include="Source\Challenges\Challenge_N.cpp"/>
-    <ClCompile Include="Source\Challenges\Common\Challenge.cpp"/>
-    <ClCompile Include="Source\Helpers\FileHelpers.cpp"/>
+    <ClCompile Include="Source\AdventOfCode.cpp" />
+    <ClCompile Include="Source\Challenges\Challenge_N.cpp" />
+    <ClCompile Include="Source\Challenges\Common\Challenge.cpp" />
+    <ClCompile Include="Source\Helpers\FileHelpers.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Challenges\Challenge_N.h"/>
-    <ClInclude Include="Source\Challenges\Common\Challenge.h"/>
-    <ClInclude Include="Source\CommonDefinitions.h"/>
-    <ClInclude Include="Source\Generated\GeneratedDefinitions.h"/>
-    <ClInclude Include="Source\Helpers\FileHelpers.h"/>
+    <ClInclude Include="Source\Challenges\Challenge_N.h" />
+    <ClInclude Include="Source\Challenges\Common\Challenge.h" />
+    <ClInclude Include="Source\CommonDefinitions.h" />
+    <ClInclude Include="Source\Generated\GeneratedDefinitions.h" />
+    <ClInclude Include="Source\Helpers\FileHelpers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
