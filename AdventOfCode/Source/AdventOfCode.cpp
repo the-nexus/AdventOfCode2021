@@ -10,7 +10,7 @@
 #define IS_FIRST_PART true
 
 // EDIT_HERE:  Set this to true if your console closes before you have time to see your results at the end of the program
-#define HOLD_EXECUTION true
+#define HOLD_EXECUTION false
 
 
 
