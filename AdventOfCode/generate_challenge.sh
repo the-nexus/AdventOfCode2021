@@ -4,8 +4,8 @@ DAY="${2}"
 
 if [[ (-z $YEAR) || (-z $DAY) ]]; then
     echo "ERROR!  Invalid arguments."
-    echo "        Command  ->  sh generate_challenge.sh [YEAR] [DAY]"
-    echo "        Example  ->  sh generate_challenge.sh 2020 01"
+    echo "        Command  ->  ./generate_challenge.sh [YEAR] [DAY]"
+    echo "        Example  ->  ./generate_challenge.sh 2020 01"
     exit 1
 fi
 
@@ -20,16 +20,16 @@ if [[ -z "$SESSION_KEY" ]]; then
 fi
 
 cd "Inputs/"
-sh "download_input.sh" $YEAR $DAY $SESSION_KEY
+"./download_input.sh" $YEAR $DAY $SESSION_KEY
 echo ""
 
 cd "../Source/Challenges/"
-sh "generate_challenge_code.sh" $DAY
+"./generate_challenge_code.sh" $DAY
 echo ""
 
 cd "../Generated/"
-sh "generate_definitions_code.sh"
+"./generate_definitions_code.sh"
 echo ""
 
 cd "../../"
-sh "generate_solution.sh"
+"./generate_solution.sh"
