@@ -6,9 +6,9 @@
 
 enum class EErrorCode
 {
-    Success,
-    NotImplemented,
-    FileNotFound,
-    FileEmpty,
-    Undefined
+	Success,
+	NotImplemented,
+	FileNotFound,
+	FileEmpty,
+	Undefined
 };
