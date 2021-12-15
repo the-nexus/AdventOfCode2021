@@ -6,6 +6,22 @@
 class CChallenge_14 : public CChallenge
 {
 private:
+    struct SRule
+    {
+        SRule(std::string const& inputRuleStr, char const outputChar)
+            : m_inputRuleStr(inputRuleStr)
+            , m_outputChar(outputChar)
+        {}
+
+        std::string m_inputRuleStr = "";
+        char m_outputChar = '\0';
+        unsigned long long m_newOccurences = 0;
+        unsigned long long m_previousOccurences = 0;
+        unsigned long long m_totalOccurences = 0;
+        SRule* m_leftOutputRule = nullptr;
+        SRule* m_rightOutputRule = nullptr;
+    };
+
     virtual EErrorCode SetUp_FirstPart() override { return SetUp_Common(); }
     virtual EErrorCode Run_FirstPart() override;
     virtual EErrorCode CleanUp_FirstPart() override { return EErrorCode::Success; }
@@ -15,10 +31,14 @@ private:
     virtual EErrorCode CleanUp_SecondPart() override { return EErrorCode::Success; }
 
     EErrorCode SetUp_Common();
+    EErrorCode CleanUp_Common();
 
-    void CountSymbolAfterIterations(int const iterationCount, char const leftSymbol, char const rightSymbol, std::vector<unsigned long long>& symbolCounts, std::string& keyBuffer);
+    void IterateRules();
+    void CountSymbolOccurences(std::vector<unsigned long long>& symbolCounts);
+    unsigned long long GetSymbolMinMaxOccurenceDelta(std::vector<unsigned long long>& symbolCounts);
 
     static std::string const sm_inputFilePath;
-    std::map<std::string, char> m_rules;
-    std::string m_template;
+    std::string m_baseTemplate = "";
+    std::vector<SRule*> m_rules;
+    std::map<std::string, SRule*> m_rulesMap;
 };
