@@ -124,7 +124,8 @@ int CChallenge_20::EnhanceImage()
 
     for (int bufferY = 0; bufferY < m_imageHeight; ++bufferY)
     {
-        m_imageFrontBuffer[bufferY][m_imageAnchorX] = m_<
+        // TODO
+        m_imageFrontBuffer[bufferY][m_imageAnchorX] = 0;
     }
 
     for (int bufferX = 0; bufferX < m_imageWidth; ++bufferX)
